@@ -1,0 +1,242 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.navbar-inverse {
+    background-image: linear-gradient( to right top, rgba(0, 0, 0, 0.8), rgba(32, 32, 32, 0.8));
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-inverse ul li:hover {
+    background: rgba(57, 36, 194, 0.8);
+    color: white;
+}
+
+
+
+
+
+
+
+.header {
+     height: 100vh; 
+    background-image: url("https://i.imgur.com/alw0TUI.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-position: top; */
+    /* position: relative; */
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    /* color: #fff; */
+    color: black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    animation: moveInRight 1s ease-out;
+}
+
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*********** About Me Section Start ********/
+
+
+
+
+
+#sobre {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 700px;
+    color: #5a5a5a;
+    background-image: url("https://i.imgur.com/CRvjfrK.png");
+    /* background-image: linear-gradient( to right top, rgba(0, 0, 0, 0.8), rgba(85, 84, 84, 0.8));  */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+.img-responsive {
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* *****************  album  ***************** */
+
+#fotos{
+    background-image: url("https://i.imgur.com/97QzAx5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-width:50%;
+    height:250px;
+    margin: 10px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
+
+/* -----------  count-down  ------------ */
+
+/* #count-down{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+h2{
+    font-size: 7rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 3rem;
+}
+
+h3{
+    color: #fff;
+}
+
+.coming-soon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://i.imgur.com/q1SReSz.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 40%;
+}
+
+.day,
+.hour,
+.minute,
+.second{
+    font-size: 3rem;
+}
+
+.waiting{
+    height: 50vh;
+}
+
+
+
+/* .project {
+    transition: transform .3s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+} */
+
+
+/********* My Portfolio Section End ********/
+
+
