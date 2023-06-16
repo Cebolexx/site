@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.navbar-inverse {
+    background-image: linear-gradient( to right top, rgba(0, 0, 0, 0.8), rgba(32, 32, 32, 0.8));
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-inverse ul li:hover {
+    background: rgba(57, 36, 194, 0.8);
+    color: white;
+}
+
+#fotos{
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    
+}
+.project{
+    margin-top: 100px;
+}
+
+.row{
+    width: 90%;
+    height: 80%;
+}
+
+img {
+    max-width:50%;
+    height:250px;
+    margin: 10px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
